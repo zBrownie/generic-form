@@ -57,18 +57,31 @@ export const formTemplate: FromTemplate = {
           optionValue: "friday",
         },
       ],
-      result: [
+      result: [],
+    },
+    {
+      id: "4",
+      type: "select",
+      label: "User role",
+      name: "userRole",
+      options: [
+        {
+          id: "1",
+          optionLabel: "Admin",
+          optionValue: "admin",
+        },
         {
           id: "2",
-          optionLabel: "Saturday",
-          optionValue: "saturday",
+          optionLabel: "IT",
+          optionValue: "it",
         },
         {
           id: "3",
-          optionLabel: "Friday",
-          optionValue: "friday",
+          optionLabel: "HR",
+          optionValue: "hr",
         },
       ],
+      result: [],
     },
   ],
 };

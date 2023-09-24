@@ -6,7 +6,12 @@ export interface FromTemplate {
   questions: QuestionProps[];
 }
 
-export type QuestionTypes = "text" | "checkbox" | "radio" | "default";
+export type QuestionTypes =
+  | "text"
+  | "checkbox"
+  | "radio"
+  | "select"
+  | "default";
 
 export interface QuestionProps {
   id: string;

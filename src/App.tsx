@@ -63,6 +63,25 @@ function App() {
         </Fragment>
       );
     },
+    select: (question: QuestionProps) => {
+      return (
+        <Fragment>
+          <label>{question.label}</label>
+          <div>
+            <select {...register(question.name)}>
+              <option value={undefined}>Select</option>
+              {question.options?.map((option) => {
+                return (
+                  <option key={option.id} value={option.optionValue}>
+                    {option.optionLabel}
+                  </option>
+                );
+              })}
+            </select>
+          </div>
+        </Fragment>
+      );
+    },
     default: () => {
       return (
         <Fragment>
